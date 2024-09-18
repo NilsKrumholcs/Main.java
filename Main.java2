@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("241RDB138 Nils Edvards Krumholcs");
+		System.out.println("23. variants");
+				
+		double x, y;
+		
+		System.out.print("x=1");
+		x = sc.nextDouble();
+		
+		System.out.print("y=1");
+		y = sc.nextDouble();
+		
+		System.out.println("result:");
+		
+		if (x >= 4 && x <= 5 && y <= 3 && y >= 2)
+			System.out.print("white");
+		else if ((x-5) * (x+5) + (y-3) * (y+3) <4)
+			System.out.print("grey");
+		else if (x <= 5 && y <= 8 && y <= -x + 9)
+			System.out.print("white")
+		
+		sc.close();
+	}
+
+}
